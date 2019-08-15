@@ -1,25 +1,25 @@
 import deviceSizes from './sizes'
-const { command, currentPage } = figma
+const { command, currentPage, closePlugin } = figma
 const { selection } = currentPage
-const end = figma.closePlugin
 
 const all = [...Object.keys(deviceSizes).map(key => deviceSizes[key])]
 const devices = command === 'all'
+  // flatten all devices to a single array
   ? [].concat.apply([], all)
   : deviceSizes[command] 
 
 function hasValidSelection(nodes) {
-  const frameTypes = ["FRAME", "COMPONENT", "INSTANCE"]
   const oneSelected = nodes.length === 1
   if (!oneSelected) return false
   
+  const frameTypes = ["FRAME", "COMPONENT", "INSTANCE"]
   const isFrame = frameTypes.indexOf(nodes[0].type) >= 0
   return isFrame
 }
 
 function main(nodes) {
   if (!hasValidSelection(selection)) {
-    return end('Select a single frame to test responsive sizes')
+    return closePlugin('Select a single frame to test responsive sizes')
   }
 
   // the frame to clone
@@ -70,4 +70,4 @@ function main(nodes) {
 }
 
 main(selection)
-end('Responsified ⚡️')
+closePlugin('Responsified ⚡️')
