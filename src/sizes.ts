@@ -1,26 +1,26 @@
 const iphone = [
   {
-    name: 'iPhone X Max',
+    name: 'iPhone Xs Max / XR',
     width: 414,
     height: 896,
   },
   {
-    name: 'iPhone X',
+    name: 'iPhone X / Xs',
     width: 375,
     height: 812,
   },
   {
-    name: 'iPhone 7/8 Plus',
+    name: 'iPhone 7+ / 8+',
     width: 414,
     height: 736,
   },
   {
-    name: 'iPhone 6/7/8',
+    name: 'iPhone 7 / 8',
     width: 375,
     height: 667,
   },
   {
-    name: 'iPhone SE',
+    name: 'iPhone 5SE',
     width: 320,
     height: 668,
   },
