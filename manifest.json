@@ -1,0 +1,14 @@
+{
+  "api": "1.0.0",
+  "id": "743654854885744527",
+  "name": "Responsify ⚡️",
+  "main": "src/plugin.ts",
+  "menu": [
+    {"name": "iPhone", "command": "iphone"},
+    {"name": "Android", "command": "android"},
+    {"name": "Tablet", "command": "tablet"},
+    {"name": "Desktop", "command": "desktop"},
+    {"name": "Watch", "command": "watch"},
+    {"name": "All devices (for whatever reason)", "command": "all"}
+  ]
+}
