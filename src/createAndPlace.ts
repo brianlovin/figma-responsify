@@ -48,4 +48,10 @@ export function createAndPlace(props) {
     place(instance, props)
     return instance
   }
+
+  if (selectedNode.type === 'INSTANCE') {
+    const instance = selectedNode.clone()
+    place(instance, props)
+    return instance
+  }
 }
