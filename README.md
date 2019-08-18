@@ -1,3 +1,5 @@
+![Figma Responsify](./assets/cover.png)
+
 # Figma Responsify ⚡️
 
 A Figma plugin to quickly test your designs across multiple device sizes.
