@@ -4,6 +4,8 @@
 
 A Figma plugin to quickly test your designs across multiple device sizes.
 
+[Install on Figma](https://www.figma.com/c/plugin/743654854885744527/Responsify-%E2%9A%A1%EF%B8%8F)
+
 ## Usage
 
 1. Select any frame, component, or instance
