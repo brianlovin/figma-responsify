@@ -18,9 +18,9 @@ function hasValidSelection(nodes) {
   return isFrame
 }
 
-function main(nodes) {
+function main(nodes): Promise<string> {
   if (!hasValidSelection(selection)) {
-    return closePlugin('Select a single frame to test responsive sizes')
+    return Promise.resolve('Select a single frame to test responsive sizes')
   }
 
   // the frame to clone
@@ -58,7 +58,7 @@ function main(nodes) {
 
   figma.currentPage.selection = containerFrames
   figma.viewport.scrollAndZoomIntoView(containerFrames)
+  return Promise.resolve('Responsified ⚡️')
 }
 
-main(selection)
-closePlugin('Responsified ⚡️')
+main(selection).then((msg) => closePlugin(msg))
