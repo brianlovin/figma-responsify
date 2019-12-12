@@ -20,9 +20,9 @@ const iphone = [
     height: 667,
   },
   {
-    name: 'iPhone 5SE',
+    name: 'iPhone 5 / SE',
     width: 320,
-    height: 668,
+    height: 568,
   },
 ]
 
